@@ -1,5 +1,9 @@
 # koa-underscore-templates
 
+[![npm][npm-version-badge]][npm-link]
+![node][node-version-badge]
+[![travis][travis-badge]][travis-link]
+
 Render [underscore.js](http://underscorejs.org/) templates with Koa.
 
 Works with Koa 2.x or newer.
@@ -63,6 +67,14 @@ The middleware takes the following options:
 
 Render a template. Works asynchronously, so you must handle the returned promise.
 
+If `ctx.type` has not been set, it will be automatically set to `html`.
+
 Takes the following options:
 * **`layout` (optional)**
   If set, overrides the middleware `layout` option.
+
+[npm-version-badge]: https://img.shields.io/npm/v/koa-underscore-templates.svg?style=flat-square
+[npm-link]: https://www.npmjs.com/package/koa-underscore-templates
+[node-version-badge]: https://img.shields.io/node/v/koa-underscore-templates.svg?style=flat-square
+[travis-badge]: https://img.shields.io/travis/frxstrem/koa-underscore-templates.svg?style=flat-square
+[travis-link]: https://travis-ci.org/frxstrem/koa-underscore-templates
