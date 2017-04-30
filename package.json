@@ -5,12 +5,16 @@
   "author": "Fredrik Østrem <frx.apps@gmail.com>",
   "repository": "https://github.com/frxstrem/koa-underscore-templates",
   "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-plugin-babel": "^4.1.1"
   },
   "dependencies": {
+    "co": "^4.6.0",
     "mz": "^2.6.0",
     "underscore": "^1.8.3"
   }
