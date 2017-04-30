@@ -12,7 +12,7 @@ Add this package as a middleware for your application:
 const koaUnderscoreTemplates = require('koa-underscore-templates');
 
 app.use(koaUnderscoreTemplates({
-  root: __dirname + '/views',
+  views: __dirname + '/views',
 }));
 ```
 
