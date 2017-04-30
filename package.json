@@ -8,10 +8,18 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "scripts": {
+    "test": "mocha test/",
+    "testall": "testen"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "chai": "^3.5.0",
     "eslint": "^3.19.0",
-    "eslint-plugin-babel": "^4.1.1"
+    "eslint-plugin-babel": "^4.1.1",
+    "koa-compose": "^4.0.0",
+    "mocha": "^3.3.0",
+    "testen": "^2.2.0"
   },
   "dependencies": {
     "co": "^4.6.0",

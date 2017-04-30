@@ -13,10 +13,10 @@ Works with Koa 2.x or newer.
 Add this package as a middleware for your application:
 
 ```js
-const koaUnderscoreTemplates = require('koa-underscore-templates');
+const views = require('koa-underscore-templates');
 
-app.use(koaUnderscoreTemplates({
-  views: __dirname + '/views',
+app.use(views(__dirname + '/views', {
+  // optional options here...
 }));
 ```
 
@@ -32,34 +32,31 @@ app.use(async (ctx) => {
 
 ### Middleware
 
-The middleware takes the following options:
+The middleware takes the path of the root directory of the templates as the first parameter.
+The second parameter is optional, and can contain the following optional options:
 
-* **`views` (required)**  
-  Path that the template names will be resolved relative to.
-
-
-* **`extension` (optional, default: `.html`)**  
+* **`extension` (default: `.html`)**  
   If non-null, then this will be appended to the file name. For instance, `extension: .html` would make `ctx.render("index.html")` render the file `index.html`.
 
 
-* **`settings` (optional)**  
+* **`settings`**  
   Settings that will be passed directly to `_.templates`.
 
 
-* **`cache` (optional, default: `true`)**
+* **`cache` (default: `true`)**
   If `true`, templates will be cached, so changes to templates may require a restart.
   If `false`, templates will be recompiled every time a change occurs.
 
 
-* **`globals` (optional)**
+* **`globals`**
   If given, the properties of this object will be available to all templates.
 
 
-* **`ignoreState` (optional, default: `false`)**
+* **`ignoreState` (default: `false`)**
   If `true`, then properties of `ctx.state` will not be available to templates.
 
 
-* **`layout` (optional)**  
+* **`layout`**  
   Set the layout template. The `body` variable is available in the layouts.
 
 

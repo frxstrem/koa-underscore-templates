@@ -6,14 +6,14 @@ const co = require('co');
 
 const def = (value, defaultValue) => typeof value !== 'undefined' ? value : defaultValue;
 
-module.exports = function(options) {
+module.exports = function(viewsPath, options) {
   if(options == null)
     options = { };
 
-  if(options.views == null)
-    throw new Error('options.views is not set');
+  if(viewsPath == null)
+    throw new Error('views path is not set');
 
-  const root             = path.resolve(options.views);
+  const root             = path.resolve(viewsPath);
   const extension        = def(options.extension, '.html');
   const templateSettings = def(options.settings, undefined);
   const cache            = Boolean(def(options.cache, true));
