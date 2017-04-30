@@ -1,0 +1,16 @@
+{
+  "name": "koa-underscore-templates",
+  "version": "0.0.0",
+  "description": "Render underscore.js templates with Koa",
+  "author": "Fredrik Østrem <frx.apps@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1"
+  },
+  "dependencies": {
+    "mz": "^2.6.0",
+    "underscore": "^1.8.3"
+  }
+}
