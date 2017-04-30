@@ -1,6 +1,6 @@
 {
   "name": "koa-underscore-templates",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Render underscore.js templates with Koa",
   "author": "Fredrik Østrem <frx.apps@gmail.com>",
   "license": "MIT",
